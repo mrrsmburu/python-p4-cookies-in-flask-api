@@ -1,4 +1,5 @@
 from flask import Flask, request, session, jsonify, make_response
+from urllib.parse import quote as url_quote
 
 app = Flask(__name__)
 app.json.compact = False
